@@ -1,0 +1,54 @@
+.contact-us{
+  background: url(/src/assets/img/feature-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper{
+    padding-block: 10rem;
+    text-align: center;
+  }
+
+  &__form{
+    margin-top: 3rem;
+    padding:4.5rem  1.5rem;
+    background-color: var(--c-white);
+    border-radius: 1.5rem;
+    width: 50%;
+    box-shadow: 0px 20px 50px 0px rgba(59, 62, 67, 0.05);
+    margin-inline: auto;
+
+    &>button{
+      background-color: #e1e0ff;
+      margin-top: 2rem;
+      border: none;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.form{
+  &__upper{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+
+    &:nth-child(2){
+      margin-block: 3rem;
+    }
+  }
+}
+
+.input{
+  padding: 1rem 0.5rem;
+  width: 36.5rem;
+
+  &.message{
+    width: 80%;
+  }
+}
+
+.input:focus{
+  border: 2px solid rgb(62,203,254);
+  background-color: #e1e0ff;
+}

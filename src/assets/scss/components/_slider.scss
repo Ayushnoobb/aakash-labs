@@ -1,0 +1,47 @@
+.slider{
+  &__card{
+    padding: 3rem 1.5rem;
+    background-color: var(--c-white);
+    border-radius: 16px;
+    box-shadow: 0px 20px 50px 0px rgba(59, 62, 67, 0.05);
+
+  }
+
+  &__testimony{
+
+    &-img{
+      max-width: 4.8rem;
+      width:100%;
+      height: 4.8rem;
+      border-radius: 50%;
+    }
+
+    &-intro{
+      font-size: 2rem;
+      color: var(--c-black);
+      position: relative;
+
+      &::after{
+        position: absolute;
+        content: attr(data-designation);
+        bottom: 0;
+        left: 0;
+        transform: translateY(80%);
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__upper{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__lower{
+    font-size: 1.4rem;
+  }
+
+  
+}

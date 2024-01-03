@@ -1,0 +1,88 @@
+.container{
+  max-width: 1280px;
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.button{
+  &__primary{
+    display: block;
+    width: fit-content;
+    padding: 1.5rem 4.5rem;
+    background-color: var(--c-white);
+    color: var(--c-purple);
+    border-radius: 32px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-inline: auto;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+      opacity: 0.8;
+    }
+
+    &.bg-purple{
+      background-color: #e1e0ff;
+    }
+  }
+}
+
+.heading{
+  &__primary{
+    color: var(--c-purple);
+    text-align: center;
+    font-size: 6.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 81.6px */
+  }
+
+  &__secondary{
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 122%;
+    position: relative;
+    padding-top: calc(2.4rem * 2);
+    color: var(--c-black);
+    &::after{
+      position: absolute;
+      content: attr(data-sub_head);
+      top: 0;
+      left: 0;
+      color: var(--c-orange);
+      font-size: 1.4rem;
+      font-weight: 600;
+
+    }
+
+    &.text-center{
+      text-align: center;
+
+      &::after{
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__tertiary{
+    color: var(--c-purple);
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+  }
+
+  &__quat{
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--c-black);
+  }
+}
